@@ -1,12 +1,12 @@
 var express = require('express');
 var glob = require('glob');
-
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 // var compress = require('compression');
 // var methodOverride = require('method-override');
+var session = require('express-session');
 
 module.exports = function (app, config) {
   // app.set('views', config.root + '/app/views');
