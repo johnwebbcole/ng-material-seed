@@ -66,7 +66,7 @@ gulp.task('copy-index', function () {
 
 gulp.task('watch', function () {
 
-  plugins.express.run(['server/server.js']);
+  plugins.express.run(['server/app.js']);
 
   gulp.watch([
         'build/**/*.html',
@@ -93,7 +93,7 @@ gulp.task('watch', function () {
 // }));
 
 gulp.task('express', function () {
-  plugins.express.run('server/server.js');
+  plugins.express.run('server/app.js');
 });
 
 gulp.task('default', ['scripts', 'templates', 'css', 'copy-index', 'vendorJS', 'vendorCSS', 'fonts', 'assets', 'watch']);
