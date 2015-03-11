@@ -73,7 +73,7 @@ gulp.task('watch', function () {
         'build/**/*.js',
         'build/**/*.css'
     ], function (event) {
-    console.log("**", event);
+    console.log("Gulp:watch **", event);
     plugins.express.notify(event);
   });
 
